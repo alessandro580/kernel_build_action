@@ -13,12 +13,12 @@ jobs:
 
     steps:
       - name: Build Kernel
-        uses: dabao1955/kernel_build_action@main
+        uses: alessandro580/kernel_build_action@main
         with:
-          kernel-url: https://github.com/AcmeUI-Devices/android_kernel_xiaomi_cas
+          kernel-url: https://github.com/alessandro580/SM-G780F.git
           kernel-dir: msm-4.19
-          kernel-branch: taffy
-          config: cas_defconfig
+          kernel-branch: main
+          config: exynos9830-r8slte_defconfig
           arch: arm64
           aosp-gcc: true
           aosp-clang: true
